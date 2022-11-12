@@ -41,20 +41,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.dunkin.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  voorbeeld plaatje
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   Home pagina
-  <img src="dunkin-home-pc.png" width="375px" alt="Home pagina van dunkin voor desktop"> 
-  <img src="dunkin-home-phone.jpg" width="375px" alt="Home pagina van dunkin voor telefoon"> 
+  <img src="readme-images/dunkin-home-pc.png" width="375px" alt="Home pagina van dunkin voor desktop"> 
+  <img src="readme-images/dunkin-home-phone.jpg" width="375px" alt="Home pagina van dunkin voor telefoon"> 
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  voorbeeld plaatje
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
-  <img src="dunkin-blog-pc.png" width="375px" alt="dunkin donuts blog pagina voor dektop">
-  <img src="dunkin-blog-phone.jpg" width="375px" alt="dunkin donuts blog pagina voor telefoon">
+  Blog pagina
+  <img src="readme-images/dunkin-blog-pc.png" width="375px" alt="dunkin donuts blog pagina voor dektop">
+  <img src="readme-images/dunkin-blog-phone.jpg" width="375px" alt="dunkin donuts blog pagina voor telefoon">
  
 </details>
 
