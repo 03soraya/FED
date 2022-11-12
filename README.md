@@ -45,16 +45,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   Home pagina
-  <img src="dunkin-home-pc" width="375px" alt="Home pagina van dunkin voor desktop"> 
-  <img src="dunkin-home-phone" width="375px" alt="Home pagina van dunkin voor telefoon"> 
+  <img src="dunkin-home-pc.png" width="375px" alt="Home pagina van dunkin voor desktop"> 
+  <img src="dunkin-home-phone.jpg" width="375px" alt="Home pagina van dunkin voor telefoon"> 
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
-  <img src="dunkin-blog-pc" width="375px" alt="dunkin donuts blog pagina voor dektop">
-  <img src="dunkin-blog-phone" width="375px" alt="dunkin donuts blog pagina voor telefoon">
+  <img src="dunkin-blog-pc.png" width="375px" alt="dunkin donuts blog pagina voor dektop">
+  <img src="dunkin-blog-phone.jpg" width="375px" alt="dunkin donuts blog pagina voor telefoon">
  
 </details>
 
