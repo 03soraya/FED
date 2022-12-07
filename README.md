@@ -216,9 +216,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Skip to content 
+  - dunkin logo
+  - Bestel section knoppen breder
+  - Z-index: 1000;  bij header
+  - WE LOVE COFFEE is H2
+  - 2de pagina beginnen
 - ...
 
 </details>
@@ -234,6 +237,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - screenreader is kut
+
+  - Met het tabben word het hamburger menu ook helemaal gelezen
+  - De knoppen onder elke section zie je niet de blauwe rand om de hele knop en alleen de bovenkant
+  - nav:focus-within, checked + nav { transform: translate(0); }
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -276,12 +284,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  1. Koen
+  - vraag over fontsize
 
+  2. Soraya
+  - vraag responsive
+  - vraag over grid
+  - een knop die moet verplaatsen
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
