@@ -252,7 +252,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   dit was lastig 
   - responisve is veel moeilijker dan ik dacht en het lukt mij eigenlijk helemaal niet, zoals je ziet op de foto is het totaal niet responsive
-  <img src="readme-images/voortgang3" width="375px" alt="dit ging lastig foto">
+  <img src="readme-images/voortgang3.png" width="375px" alt="dit ging lastig foto">
 
 
   ### Agenda voor meeting
@@ -283,10 +283,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/homepagina.png "width="375px" alt="homepagina uitkomst">
-  <img src="readme-images/homepagina2.png "width="375px" alt="homepagina uitkomst">
-  <img src="readme-images/blogpagina.png "width="375px" alt="blogpagina uitkomst">
-  <img src="readme-images/homegroot.png "width="375px" alt="homepagina">
+  <img src="readme-images/homepagina.png" width="375px" alt="homepagina uitkomst">
+  <img src="readme-images/homepagina2.png" width="375px" alt="homepagina uitkomst">
+  <img src="readme-images/blogpagina.png" width="375px" alt="blogpagina uitkomst">
+  <img src="readme-images/homegroot.png" width="375px" alt="homepagina">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb deze weken heel veel geleerd, om heel eerlijk te zijn dacht ik niet dat ik zo ver zou kunnen komen.
