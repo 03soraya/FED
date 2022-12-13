@@ -10,9 +10,6 @@ button, summary {
 }
 
 
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -40,19 +37,8 @@ button, summary {
 
 
 /****************/
-/* JOUW STYLING */
+/* MIJN STYLING */
 /****************/
-
-/* jouw code */
-
-/* @font-face {
-	font-family: 'dunkinfont';
-	src: url(/fonts/Dunkin\ Sans.otf) format('opentype');
-}
-
-h1 {
-	font-family: 'dunkinfont';
-} */
 
 @font-face {
     font-family: 'Dunkin';
@@ -69,70 +55,43 @@ h1 {
     padding: 0;
 }
 
-h3 {
-	color: var(--color-pink);
-}
-
-/* main {
-	display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
-
-  JE KAN MET GRID WERKEN OP DE MAIN!! CHECK IT OUT
-  KIJK NAAR FONT OPDRACHT!!!
-  NAV/HEADER MOET STICKY WORDEN -> KIJK SS
-  VERGEET GEEN HOVER EN FOCUS
-  DOE P::SELECTION IS LEUKE CSS KIJK NAAR SS
-  @MEDIA DARK MODE!!!!!
-  klein scherm 1
-  groot scherm 2
-  row
-  kijk naar span - animatie html
-} */
-
-main {
-	/* display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(16em, 1fr));
-  gap:0.2em; */
-  /* sasja: Het is beter om de main flexbox te geven, in dit geval */
-  display: flex;
-  flex-direction: column;
-  
- /* grid-template-rows: 1fr 1fr; */
-  /* grid-template-columns: 1fr; */
-  gap:0.2em;
-
-  /* sasja: max breedte aan de main zodat het niet blijft stretchen op desktop */
-  /* max-width: 60em; */
-  margin: auto;
-
-}
-
-h1::selection {
-	background-color: hotpink;
-}
-
 body {
     background-color:white;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap:0.2em;
+  margin: auto;
+}
+
+main h1 {
+	color: var(--color-white);
+	text-transform: uppercase;
+	margin-top: 0;
+	font-size: 3em;
+	line-height: 1.3
+}
+
+h3 {
+	color: var(--color-pink);
+}
+
 header {
     background-color: white;
-    /* display: flex; */
-    /* justify-content: flex-end;
-    align-items: flex-end;
-    padding: 20px 4%;
-    margin: 0; */
 	z-index: 1000;
 	padding-bottom: 1em;
 	border: 2px solid var(--color-gray);
 	padding-bottom: 0;
+	position: sticky;
+	top: 0; 
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
 }
 
-/* header h1{
-	color:var(--color-orange);
-} */
-
+/* code voor dunkin logo in header */
 header a {
 	color:var(--color-orange);
 	font-size: 2em;
@@ -149,7 +108,7 @@ header a:hover {
 	color: var(--color-pink);
 }
 
-
+/* code voor nav */
 nav a {
 	color: var(--color-brown);
 	font-size: 1em;
@@ -163,51 +122,27 @@ a {
 	text-decoration:none;
 }
 
-main h1 {
-	color: var(--color-white);
-	text-transform: uppercase;
-	margin-top: 0;
-	font-size: 3em;
-	line-height: 1.3
-}
-
 header nav {
 	background-color: var(--color-gray);
 	padding:1em;
-  display:grid;
-  align-content:start;
-  gap:1em;
-
-  padding:1em;
-  
-  position: fixed;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
-
-  transform: translateX(-100%);
-
-  /* transition:transform .5s; */
-
+	display:grid;
+  	align-content:start;
+  	gap:1em;
+  	padding:1em;
+  	position: fixed;
+  	left:0;
+  	right:0;
+  	top:0;
+  	bottom:0;
+  	transform: translateX(-100%);
 }
 
 nav.toonMenu {
 	transform:translatex(0);
-  }
+}
 
 header > button {
 	order:-1;
-	
-  }
-
-header {
-  position: sticky;
-  top: 0; 
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
 }
 
 header button {
@@ -217,11 +152,11 @@ header button {
 	border:none;
 	background-image:url("../images/menu.png");
 	/* bron image https://www.flaticon.com/free-icon/menu_2976215?term=menu&page=1&position=1&page=1&position=1&related_id=2976215&origin=search */
-  background-size:50%;
-  background-position:center;
-  background-repeat:no-repeat;
-  border-radius: 1em;
-  outline:none;
+  	background-size:50%;
+  	background-position:center;
+  	background-repeat:no-repeat;
+  	border-radius: 1em;
+  	outline:none;
 }
 
 header button:hover {
@@ -244,7 +179,7 @@ header nav ul {
 	flex-direction: column;
 	gap:0.2em;
 	align-items: center;
-  }
+}
 
 header nav{
 	outline:none;
@@ -265,15 +200,10 @@ main > div > section:first-child {
 	text-align: center;
 	padding-left: 2em;
 	padding-right: 2em;
-
 	height: 28em;
-	/* grid-row: 1/3; */
-	
-  /*  Bron van opdracht maybe */
+  /*  Ik heb de gradient van de opdracht van de les geleerd*/
 	--weird-gradient: repeating-conic-gradient( from 5deg, var(--color-coffee) 0deg 5deg, var(--color-darkcoffee) 0deg 21deg, var(--color-orange) 0deg 24deg, var(--color-coffee) 0deg 36deg, var(--color-darkcoffee) 0deg 51deg, var(--color-pink) 0deg 54deg, var(--color-coffee) 0deg 60deg );
-  
-	
-	  background-image: var(--weird-gradient);
+  	background-image: var(--weird-gradient);
 }
 
 main > div > section:first-child img{
@@ -281,17 +211,12 @@ main > div > section:first-child img{
 	margin-bottom: -25em;
 }
 
-/* section:first-child img:hover { 
-	transition:2s;
-	transform:rotate(1turn);
-} */
-
 section:first-child img:hover {
-	animation-name:zoen-animation;
+	animation-name:coffee-animation;
   animation-duration:1s;
 }
 
-@keyframes zoen-animation {
+@keyframes coffee-animation {
 	0% {
 	  transform:scale(1);
 	}
@@ -299,22 +224,6 @@ section:first-child img:hover {
 	  transform:scale(2);
 	}
 }
-
-
-
-/* @keyframes zoen-animation {
-	0% {
-	  transform:scale(1);
-	}
-	100% {
-	  transform:scale(2);
-	}
-  }
-  
-  li[aria-label="zoen"]:hover div {
-	animation-name:zoen-animation;
-	animation-duration:1s;
-  } */
 
 /***********/
 /* BESTEL*/
@@ -347,9 +256,7 @@ main > div > section:nth-of-type(2) button {
 	color: var(--color-white);
 	padding-left: 2em;
     padding-right: 2em;
-
 	outline:none;
-	/* transition:.5s; */
 }
 
 main > div > section:nth-of-type(2) button:hover {
@@ -378,9 +285,6 @@ main > div > section:nth-of-type(3) {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	/* padding-left: 2em;
-	padding-right: 2em; */
-
 	aspect-ratio:1/1; 
 }
 
@@ -392,16 +296,13 @@ main > div > section:nth-of-type(3) h2 {
 	text-align: center;
 	margin-bottom: 0;
 	line-height: 1.3
-	/* position: absolute; */
 }
 
 main > div > section:nth-of-type(3) img {
-	/* height: 30em; */
 	margin-bottom: -10em;
 	margin-top: 1em;
 	top: -5em;
-	/* width: 30em; */
-	/* position: relative; */
+
 }
 
 /************************/
@@ -409,13 +310,10 @@ main > div > section:nth-of-type(3) img {
 /**********************/
 
 ol {
-	/* background-color: var(--color-gray); */
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
-
-/* css counter */
 
 ol li {
 	background-color: var(--color-gray);
@@ -428,13 +326,11 @@ ol li {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 4em;
 }
+
 main > section:nth-of-type(1) {
-	/* padding-bottom: 3em; */
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	/* grid-template-rows: 1fr 1fr;
- 	 grid-template-columns: 1fr 1fr; */
 	 gap: 10px;
 }
 
@@ -454,7 +350,6 @@ main > section:nth-of-type(1) h2::first-line {
 main > section:nth-of-type(1) a {
 	text-align: center;
 	outline:none;
-	/* transition:.5s; */
 }
 
 main > section:nth-of-type(1) a:hover {
@@ -465,7 +360,7 @@ main > section:nth-of-type(1) a:hover {
 
 main > section:nth-of-type(1) a:focus {
 	background-color: var(--color-focusorange);
-	border: 5px solid var(--color-orange);
+	border: 4px solid var(--color-orange);
 	color:var(--color-orange);
 }
 
@@ -480,7 +375,6 @@ main > section:nth-of-type(1) img {
 	border-radius: 10em;
 	height:2.75rem;
 	padding: 0.2em;
-
 	align-self: end;
     transform: translateY(50%);
 
@@ -495,8 +389,6 @@ main > section:nth-of-type(1) p {
 	font-size: 0.65em;
 	grid-column-start: 2;
 }
-
-
 
 /* oranje button */
 main > section:nth-of-type(1) a {
@@ -528,7 +420,6 @@ main > section:nth-of-type(2) a {
 	margin-left: 3em;
 	margin-bottom: 1em;
 	z-index: 100;
-	/* transition: .5s; */
 	outline:none;
 }
 
@@ -575,7 +466,6 @@ main > section:nth-of-type(2) p {
 main > section:nth-of-type(2) img {
 	height: 30em;
 	margin-bottom: -15em;
-	/* transform: rotate(-10deg); */
 }
 
 /*********************************/
@@ -612,7 +502,6 @@ main > section:nth-of-type(3) a {
 	padding-left: 3em;
 	padding-right: 3em;
 	text-align: center;
-	/* transition:.5s; */
 	outline:none;
 }
 
@@ -666,7 +555,6 @@ main > section:nth-of-type(4) a {
 	padding-right: 3em;
 	text-align: center;
 	outline:none;
-	/* transition:.5s; */
 }
 
 main > section:nth-of-type(4) a:hover {
@@ -717,6 +605,10 @@ main > section:nth-of-type(5) img {
 	border-radius: 1em;
 }
 
+main > section:nth-of-type(5) h3 {
+	color: var(--color-brown);
+}
+
 main > section:nth-of-type(5) a {
 	background-color: var(--color-pink);
 	color: var(--color-white);
@@ -725,7 +617,6 @@ main > section:nth-of-type(5) a {
 	text-align: center;
 	margin-right:13em;
 	outline:none;
-/* transition:.5s; */
 }
 
 main > section:nth-of-type(5) a:hover {
@@ -747,11 +638,6 @@ color: white;
 border: none;
 }
 
-main > section:nth-of-type(5) h3 {
-	color: var(--color-brown);
-}
-
-
 
 /***************************/
 /* ORDER NOW BUTTON STICKY*/
@@ -762,20 +648,16 @@ main > section:nth-of-type(6) {
 	bottom: 0;
 	position: fixed;
 	background-color: var(--color-gray);
-
 	margin-left:0;
   	margin-right:0;
   	margin-bottom:0;
 	border-radius: 0;
-
 	padding-top: 2em;
-    padding-bottom: 2em;
-	
+    padding-bottom: 2em;	
 	right: 0px;
     left: 0px;
 	z-index: 100;
-
-  }
+}
 
 main > section:nth-of-type(6) a {
 	background-color: var(--color-orange);
@@ -791,12 +673,13 @@ main > section:nth-of-type(6) a {
 	margin-right: 1em;
 }
 
-
+/**********/
+/* footer*/
+/********/
 
 footer {
     background-color: var(--color-orange);
 	padding: 0.5em 0;
-
 	padding-bottom: 9em;
 } 
 
@@ -809,12 +692,10 @@ footer a {
 	background-color: var(--color-darkorange);
 	color: var(--color-white);
 	padding: 1em;
-	/* margin-top: 1em; */
 	border-radius: 2em;
 	padding-left: 3em;
 	padding-right: 3em;
 	text-align: center;
-
 	display: flex;
 	flex-direction: column;
 	margin-left: 3em;
@@ -838,40 +719,16 @@ footer a:active{
 
 
 
-
 /************************/
 /* 2DE PAGINA BLOG.HTML*/
 /**********************/
 
 .blog {
 	background-color: var(--color-pink);
-
-	/* display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 1fr; */
-}
-
-.blog section:first-child {
-	background-color: none;
-	/* aspect-ratio: 1/1; */
-	background-image: none;
-	background-color: var(--color-pink);
-
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center; */
-	display: grid;
-	grid-template-rows: 31vw 11vw 11vw 11vw;
-	grid-template-columns: 81vw;
 }
 
 .blog h1 {
 	margin-top: 16vw;
-}
-
-.blog section:nth-of-type(2) img {
-	height: 11.6em;
-	border-radius: 1em;
 }
 
 .blog h2 {
@@ -880,13 +737,16 @@ footer a:active{
 	margin-top: -2em;
 }
 
-.blog section:nth-of-type(2) h3 {
-	color: var(--color-brown);
-	margin-top: 0;
-	text-align: left;
-	font-size: 5vw;
+.blog section:first-child {
+	background-color: none;
+	background-image: none;
+	background-color: var(--color-pink);
+	display: grid;
+	grid-template-rows: 31vw 11vw 11vw 11vw;
+	grid-template-columns: 81vw;
 }
 
+/* voor de zoek balk */
 .blog form {
 	border-radius: 2em;
 	grid-row-start: 2;
@@ -898,30 +758,37 @@ footer a:active{
 	border-radius: 2em;
 	padding-right: 4em;
 	padding-left: 1em;
-	/* background-color: var(--color-pink); */
 	background-color: transparent;
 	color: var(--color-white);
-
-	  min-height:3em;
-
-	 outline:none;
+	min-height:3em;
+	outline:none;
 	appearance:none;
-
 	border-color: var(--color-white);
 	border-style: solid;
 	border-width: .3em;
 }
 
-.blog input::placeholder {
-	color: var(--color-zoeken);
-  }
-
 .blog input:hover {
 	background-color: hotpink;
 }
 
+.blog input::placeholder {
+	color: var(--color-zoeken);
+}
+
 .blog input:focus {
 	caret-color:white;
+}
+
+/* voor de categorie en datum dropdown */
+#categorie, #datuminput {
+	background-color: var(--color-white);
+	color: var(--color-pink);
+	border-radius: 2em;
+	padding-left: 1em;
+	min-height:3em;
+	outline:none;
+	border-style: none;	
 }
 
 #categorie, #datuminput {
@@ -931,9 +798,7 @@ footer a:active{
 	padding-left: 1em;
 	min-height:3em;
 	outline:none;
-	/* appearance:none; */
 	border-style: none;
-	
 }
 
 #categorie {
@@ -964,14 +829,25 @@ footer a:active{
 	border: 5px solid var(--color-brown);
 }
 
-/* .blog section:nth-of-type(2) {
-	background-color: white;
-} */
-
+/* voor de 2de section van blog */
 .blog section:nth-of-type(2) {
 	background-color: transparent;
 }
 
+.blog section:nth-of-type(2) img {
+	border-radius: 1em;
+	height: 100%;
+	margin-bottom: 0;
+	object-fit: cover;
+	border-radius: 1em;
+}
+
+.blog section:nth-of-type(2) h3 {
+	color: var(--color-brown);
+	margin-top: 0;
+	text-align: left;
+	font-size: 5vw;
+}
 
 .blog section:nth-of-type(2) ul {
 	display: flex;
@@ -999,13 +875,6 @@ footer a:active{
 	flex-direction: column;
 }
 
-.blog section:nth-of-type(2) img{
-	height: 100%;
-	margin-bottom: 0;
-	object-fit: cover;
-	border-radius: 1em;
-}
-
 .blog section:nth-of-type(2) a {
 	background-color: var(--color-pink);
 	color: var(--color-white);
@@ -1016,7 +885,6 @@ footer a:active{
 	margin-right:13em;
 	margin-bottom: 0;
 	margin-left: 0;
-	/* transition:.5s; */
 	outline:none;
 }
 
@@ -1039,31 +907,26 @@ color: white;
 border: none;
 }
 
+
+
 /***************************/
 /* ORDER NOW BUTTON STICKY VOOR DE 2DE PAGINA*/
 /*************************/
 
 .blog section:nth-of-type(3) {
-	/* position: sticky; */
 	bottom: 0;
 	position: fixed;
 	background-color: var(--color-gray);
-
 	margin-left:0;
   	margin-right:0;
   	margin-bottom:0;
 	border-radius: 0;
-
-	/* padding-top: 2em;
-    padding-bottom: 2em; */
-	
 	right: 0px;
     left: 0px;
 	aspect-ratio: auto;
 	padding: 1.5em;
 	z-index: 100;
-
-  }
+}
 
 .blog section:nth-of-type(3) a {
 	background-color: var(--color-orange);
@@ -1080,32 +943,16 @@ border: none;
 }
 
 
-/* height: 11.21em;
-padding-right: 4.67em;
-padding-left: 4.67em;
-border-width: 0.93em;
-border-color: #fff;
-border-radius: 7.48em;
-background-color: #fff; */
-
-/* @media only screen and (max-width: 37.5em) {
-
-	main {
-		display: grid;
-		
-	   grid-template-rows: repeat(3, 1fr);
-		grid-template-columns: 1fr;
-	}
-
-	
-
-} */
-
+/* voor responsive, 30em = 480px */
 @media only screen and (min-width: 30em) {
 
 	header {
 		padding-left: 1vw;
 		padding-right: 1vw;
+	}
+
+	header a {
+		font-size: 4vw;
 	}
 
 	header nav a {
@@ -1116,10 +963,6 @@ background-color: #fff; */
 		gap: 1vw;
 	}
 
-	header a {
-		font-size: 4vw;
-	}
-	
 	header > button {
 		height: 4vw;
 		border-radius: 1vw;;
@@ -1127,16 +970,12 @@ background-color: #fff; */
 
 	nav > button {
 		height: 5vw;
-		
-			border-radius: 1vw;
-		
+		border-radius: 1vw;	
 	}
 
 	body {
 		font-size: 50%;
 	}
-
-	/* sasja: De verschillende grid regels komen van de originele website af, hiermee zeg je op welke plek je de items wilt hebben. */
 
 	main {
 		max-width: 85vw;
@@ -1148,7 +987,6 @@ background-color: #fff; */
 	}
 
 	main > div {
-		/* max-height: 50vh; */
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(5, 1fr);
@@ -1156,6 +994,7 @@ background-color: #fff; */
 		margin-bottom: 4em;
 	}
 
+	/* coffee section */
 	main > div > section:first-child {
 		grid-column-start: 1;
 		grid-column-end: 8;
@@ -1164,12 +1003,12 @@ background-color: #fff; */
 	}
 
 	main > div > section:first-child img{
-		/* height: 30em; */
 		height: 49vw;
 		margin-bottom: -25em;
 		margin-top: 3vw;
 	}
 
+	/* bestel section */
 	main > div > section:nth-of-type(2) {
 		grid-column-end: 13;
 		grid-column-start: 8;
@@ -1186,10 +1025,10 @@ background-color: #fff; */
 	}
 
 	main > div > section:nth-of-type(2) button {
-		/* font-size: 90%; */
 		font-size: 1.5vw;
 	}
 
+	/* ajax section */
 	main > div > section:nth-of-type(3) {
 		grid-column-end: 13;
 		grid-column-start: 8;
@@ -1212,10 +1051,9 @@ background-color: #fff; */
 		height: auto;
 	}
 
+	/* bestel dunkin online section */
 	main > section:nth-of-type(1) {
-		grid-column-end: span 2;
-		/* display: flex;
-		flex-direction: row; */
+		grid-column-end: 2;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 4em;
@@ -1224,16 +1062,10 @@ background-color: #fff; */
 	main > section:nth-of-type(1) a {
 		grid-column-start: 1;
 		grid-row-start: 1;
-		/* height: 4em; */
-		/* height: 6vw;
-    	margin-top: 21vw;
-    	margin-right: 19vw;
-		font-size: 1.7vw; */
-
-	height: 4vw;
-    margin-top: 20vw;
-    margin-right: 26vw;
-    font-size: 1vw;
+		height: 4vw;
+    	margin-top: 20vw;
+    	margin-right: 26vw;
+    	font-size: 1vw;
 	}
 
 	main > section:nth-of-type(1) h2 {
@@ -1261,11 +1093,8 @@ background-color: #fff; */
 		height: 6vw;
 	}
 
+	/* app jij 'm all section */
 	main > section:nth-of-type(2) {
-		/* display: flex;
-		flex-direction: row;
-		height: 30em; */
-		/* max-height: 42vh; */
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
@@ -1300,9 +1129,6 @@ background-color: #fff; */
 	}
 
 	main > section:nth-of-type(2) p {
-		/* grid-column-start: 2;
-		grid-row-start: -4;
-		grid-row-end: -3; */
 		grid-column-start: 2;
 		grid-row-start: -4;
 		grid-row-end: -3;
@@ -1328,11 +1154,11 @@ background-color: #fff; */
     	height: 8vw;
 	}
 
+	/* oproep aan alle vegans section */
 	main > section:nth-of-type(3) {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(1, 1fr);
-		/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
 		grid-column-gap: 2em;
 		max-height: 48vw;
 		margin-bottom: 4em;
@@ -1343,7 +1169,6 @@ background-color: #fff; */
 		grid-column-end: 2;
 		grid-row-start: 1;
 		grid-row-end: 4;
-
     	width: 41vw;
     	height: 46vw;
 		object-fit: cover;
@@ -1368,16 +1193,13 @@ background-color: #fff; */
 		grid-column-start: 2;
 		grid-column-end: 3;
 		grid-row-start: 1;
-		/* margin-top: 25vw;
-    	margin-bottom: 15vw;
-		margin-right: 16vw;
-		font-size: 1.7vw; */
 		height: 4vw;
 		margin-top: 23vw;
 		margin-right: 23vw;
 		font-size: 1vw;
 	}
 
+	/* dd nieuws */
 	main > section:nth-of-type(4) {
 		flex-direction: row;
 		border-radius: 0;
@@ -1392,10 +1214,10 @@ background-color: #fff; */
 	}
 
 	main > section:nth-of-type(4) a{
-		/* height: 50%; */
 		font-size: 1.5vw;
 	}
 
+	/* blog slider section */
 	main > section:nth-of-type(5) img{
 		height: 20vw;
 	}
@@ -1412,16 +1234,22 @@ background-color: #fff; */
 
 
 	/******************************************/
-	/* Om de order now knop nie te laten zien*/
+	/* Om de order now knop niet te laten zien*/
 	/****************************************/
+
+	/* voor de eertse pagina, index*/
 	main > section:nth-of-type(6) {
 		display: none;
 	}
 
+	/* voor de 2de pagina, blog */
 	.blog section:nth-of-type(3) {
 		display: none;
 	}
 
+	/**********/
+	/* footer*/
+	/********/
 	footer {
 		display: flex;
 		justify-content: center;
@@ -1441,13 +1269,10 @@ background-color: #fff; */
 		font-size: 1.5vw;
 	}
 
+
 	/******************/
 	/* 2DE PAGINA BLOG*/
 	/*****************/
-
-	/* .blog {
-		font-size: 50%;
-	} */
 
 	.blog > main {
 		font-size: 50%;
@@ -1457,13 +1282,9 @@ background-color: #fff; */
 	.blog h1 { 
 		margin: 0;
 	}
+
 	.blog section:first-child {
-		/* display: flex;
-		flex-direction: row; */
 		display: grid;
-		/* grid-template-columns: 1fr 1fr 1fr 1fr; */
-		/* grid-template-columns: 25em 25em 25em 25em;
-		grid-template-rows: 12em; */
 		grid-template-columns: 18vw 18vw 18vw 18vw;
 		grid-template-rows: 11vw;
 		height: 11vw;
@@ -1475,7 +1296,6 @@ background-color: #fff; */
 		grid-column-end: 2;
 		grid-row-start: 1;
 		grid-row-end: 2;
-
 		font-size: 4vw;
 		align-self: end;
 	}
@@ -1487,7 +1307,6 @@ background-color: #fff; */
 		grid-row-end: 2;
 		align-self: end;
 	}
-
 
 	.blog section:first-child input{
 		grid-column-start: 2;
@@ -1518,8 +1337,6 @@ background-color: #fff; */
 
 	.blog section:nth-of-type(2) {
 		max-height: fit-content;
-		/* display: flex;
-		flex-direction: column; */
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
@@ -1529,21 +1346,16 @@ background-color: #fff; */
 	.blog section:nth-of-type(2) img {
 		width: 100%;
     	height: 100%;
-		/* width: 38vw;
-    	height: 43vw; */
 	}
 
 	.blog section:nth-of-type(2) ul {
 		display: grid;
-		/* grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr; */
 		column-gap: 5vw;
 		row-gap: 2vw;
 	}
 
 	.blog > main > section:nth-of-type(2) a {
 		margin-top: 0;
-		height: 5vw;
 	}
 
 	.blog section:nth-of-type(2) h3 {
@@ -1571,32 +1383,15 @@ background-color: #fff; */
 	.blog > footer {
 		margin-top: 16vw;
 	}
-
-
-	/* section:nth-of-type(4) {
-		grid-column-end: span 2;
-	}
-
-	section:nth-of-type(5) {
-		grid-column-end: span 2;
-	}
-	
-	section:nth-of-type(6) {
-		grid-column-end: span 2;
-	}
-
-	section:nth-of-type(7) {
-		grid-column-end: span 2;
-	}
-
-	section:nth-of-type(8) {
-		grid-column-end: span 2;
-	} */
 }
 
-/* column-gap: 3em; voor als je de website nog breder gaat maken */
-/* DOE EM IN VW!!! */
 
+
+
+
+
+
+/* voor responsive, 62em = 992px  */
 @media only screen and (min-width: 62em) {
 	main {
 		max-width: 80vw;
@@ -1611,6 +1406,7 @@ background-color: #fff; */
 		height: 44vw;
 	}
 
+	/* coffee section */
 	main > div > section:first-child img{
 		/* height: 30em; */
 		height: 35vw;
@@ -1618,10 +1414,7 @@ background-color: #fff; */
 		margin-top: 3vw;
 	}
 
-
-
-
-
+	/* bestel section */
 	main > div > section:nth-of-type(2) h2 {
 		font-size: 4vw;
 	}
@@ -1631,10 +1424,11 @@ background-color: #fff; */
 	}
 
 	main > div > section:nth-of-type(2) button {
-		/* font-size: 90%; */
 		font-size: 1.3vw;
 	}
 
+
+	/* ajax section */
 	main > div > section:nth-of-type(3) h2 {
 		font-size: 4vw;
 	}
@@ -1643,7 +1437,7 @@ background-color: #fff; */
 		margin-bottom: -18vw;
 	}
 
-
+	/* app jij 'm all section */
 	main > section:nth-of-type(2) {
 		height: 44vw;
 	}
@@ -1666,6 +1460,9 @@ background-color: #fff; */
 		font-size: 1vw;
 	}
 
+
+
+	/* 2de pagina blog */
 	.blog section:nth-of-type(2) {
 		height: 100%;
 	}
@@ -1702,12 +1499,9 @@ background-color: #fff; */
 	.blog > footer {
 		margin-top: 0;
 	}
-
-
 }
 
 /* DARKMODE */
-
 @media (prefers-color-scheme:dark) {
 	:root {
 	--darkbackcolor:#222222; 
